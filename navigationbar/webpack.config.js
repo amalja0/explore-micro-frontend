@@ -7,6 +7,10 @@ module.exports = (webpackConfigEnv, argv) => {
     projectName: "navigationbar",
     webpackConfigEnv,
     argv,
+    external: [
+      '@emotion/react',
+      '@emotion/styled',
+    ]
   });
 
   return merge(defaultConfig, {

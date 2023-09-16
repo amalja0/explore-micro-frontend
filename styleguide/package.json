@@ -1,7 +1,7 @@
 {
-  "name": "@ist/signup",
+  "name": "@ist/styleguide",
   "scripts": {
-    "start": "webpack serve --port 8087",
+    "start": "webpack serve --port 8088",
     "start:standalone": "webpack serve --env standalone",
     "build": "concurrently yarn:build:*",
     "build:webpack": "webpack --mode=production",
@@ -11,7 +11,7 @@
     "check-format": "prettier --check .",
     "test": "cross-env BABEL_ENV=test jest",
     "watch-tests": "cross-env BABEL_ENV=test jest --watch",
-    "prepare": "cd .. && husky install [child-folder]/.husky",
+    "prepare": "husky install",
     "coverage": "cross-env BABEL_ENV=test jest --coverage"
   },
   "devDependencies": {
@@ -45,11 +45,20 @@
   "dependencies": {
     "@emotion/react": "^11.11.1",
     "@emotion/styled": "^11.11.0",
-    "@mui/icons-material": "^5.14.8",
-    "@mui/material": "^5.14.8",
-    "@mui/types": "^7.2.4",
+    "@fontsource-variable/josefin-sans": "^5.0.13",
+    "@fontsource/lato": "^5.0.12",
+    "@mui/material": "^5.14.9",
+    "@mui/styled-engine-sc": "^5.14.9",
+    "babel-loader": "^9.1.3",
+    "css-loader": "^6.8.1",
+    "file-loader": "^6.2.0",
+    "postcss-loader": "^7.3.3",
     "react": "^17.0.2",
     "react-dom": "^17.0.2",
-    "single-spa-react": "^4.3.1"
+    "sass-loader": "^13.3.2",
+    "single-spa-react": "^4.3.1",
+    "style-loader": "^3.3.3",
+    "styled-components": "^6.0.8",
+    "url-loader": "^4.1.1"
   }
 }

@@ -1,3 +1,7 @@
+import Navbar from "./components/Navbar";
+
 export default function Root(props) {
-  return <h1>Hallo</h1>;
+  return (
+      <Navbar />
+  );
 }
